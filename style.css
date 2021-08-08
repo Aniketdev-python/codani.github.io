@@ -1,21 +1,13 @@
 /*  import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
-:root {
-  --theme-color: #4070f4;
-  --lite-theme-color: #7096ff;
-  --dark-theme-color: #111f44;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
-
 html {
-  -webkit-transition: all 0.5s 0s ease;
   scroll-behavior: smooth;
 }
 
@@ -24,16 +16,14 @@ html {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  box-shadow: 4px 4px 10px 10px#40f4c4;
-  background: #2c2c2c;
+  background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--theme-color);
-  transition: all 0.5s ease;
+  background: #888;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--lite-theme-color);
+  background: #555;
 }
 
 /* all similar content styling codes */
@@ -146,7 +136,7 @@ section .title::after {
 .menu-btn {
   color: #fff;
   font-size: 23px;
-
+  cursor: pointer;
   display: none;
 }
 .scroll-up-btn {
@@ -163,7 +153,7 @@ section .title::after {
   font-size: 30px;
   border-radius: 6px;
   border-bottom-width: 2px;
-
+  cursor: pointer;
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
@@ -188,7 +178,6 @@ section .title::after {
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
 }
-
 .custom-shape-divider-bottom-1628155419 {
   position: absolute;
   bottom: 0;
@@ -425,7 +414,7 @@ section .title::after {
   text-align: center;
   border-radius: 6px;
   padding: 50px 25px;
-
+  cursor: pointer;
   margin-bottom: 1.5rem;
   transition: all 0.3s ease;
 }
@@ -466,32 +455,6 @@ section .title::after {
 .projects .title::after {
   content: "what I made";
 }
-
-.projects #card1 span,
-.projects #card2 span,
-.projects #card3 span,
-.projects #card4 span {
-  position: absolute;
-  background: white;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  border-radius: 100%;
-  animation: animate 0.5s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    width: 0px;
-    height: 0px;
-    opacity: 0.4;
-  }
-  100% {
-    width: 2500px;
-    height: 2500px;
-    opacity: 0;
-  }
-}
-
 .projects .card {
   display: flex;
   background-color: black;
@@ -669,7 +632,7 @@ section .title::after {
   font-size: 18px;
   font-weight: 500;
   border-radius: 6px;
-
+  cursor: pointer;
   flex-wrap: nowrap;
   background: #4070f4;
   border: 2px solid #4070f4;
@@ -689,10 +652,9 @@ footer {
 footer span a {
   color: #4070f4;
   text-decoration: none;
-  transition: all 0.3s ease;
 }
 footer span a:hover {
-  color: var(--lite-theme-color);
+  text-decoration: underline;
 }
 
 /* responsive media query start */

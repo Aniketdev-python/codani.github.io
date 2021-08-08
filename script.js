@@ -48,20 +48,3 @@ $(document).ready(function () {
         loop: true
     });
 });
-
-const cards = document.querySelectorAll(".rip")
-cards.forEach(card => {
-    card.addEventListener("click", function (e) {
-        let x = e.clientX;
-        let y = e.clientY;
-
-        let ripples = document.createElement("span");
-        ripples.style.left = (x - 200) + "px";
-        ripples.style.top = (y - 160) + "px";
-        this.appendChild(ripples);
-
-        setTimeout(() => {
-            ripples.remove()
-        }, 500);
-    })
-});
