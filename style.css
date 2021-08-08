@@ -170,7 +170,7 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("/IMG/banner2.png") no-repeat center;
+  background: url("banner2.png") no-repeat center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -469,19 +469,19 @@ section .title::after {
 }
 
 .projects .card1 {
-  background: url("/IMG/2jarvis.PNG") no-repeat center center/cover;
+  background: url("2jarvis.PNG") no-repeat center center/cover;
 }
 
 .projects .card2 {
-  background: url("/IMG/ar2.jpg") no-repeat center center/cover;
+  background: url("ar2.jpg") no-repeat center center/cover;
 }
 
 .projects .card3 {
-  background: url("/IMG/Game.png") no-repeat center center/cover;
+  background: url("Game.png") no-repeat center center/cover;
 }
 
 .projects .card4 {
-  background: url("/IMG/Friday.PNG") no-repeat center center/cover;
+  background: url("Friday.PNG") no-repeat center center/cover;
 }
 
 .projects .card .box {
